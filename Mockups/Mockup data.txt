@@ -1,0 +1,107 @@
+Use case 1 data:
+There will be multiple answers possible. For time being we will consider only one command.
+And the mockup will contain output for that command.
+
+User input:
+ansible dev -i hosts -m command -a "uptime" -u root					--> This is not expected.
+or
+uptime
+
+Ansible output:
+"20:20  up 10 days, 12:53, 2 users, load averages: 3.02 3.08 2.82"
+
+* List all hosts
+	User input:
+	ansible group_name -i inventory --list-hosts
+
+	Ansible output:
+	hosts (2):
+    vm1
+	vm2
+
+Use case 2 data:
+This shows all the expected user inputs and outputs to user.
+	
+* see proposed merge output
+	User Input:
+	merged_version vm1 vm2
+	
+	#read from vargant file. extract list of packages. or From YAML Playbook Files.
+	*****Create sample vagrant files.****** 
+	
+	OR other option is to get packages from ansible.
+	This also returns default linux packages and other packages. maintain a blacklist to omit thes packages.
+	
+	Ansible command
+	ansible all -i inventory -a "dpkg --get-selections" --limit "vm1"
+	
+	Ansible output:
+	vm1 | SUCCESS | rc=0 >>
+	accountsservice                    install
+	acl                        install
+	acpid                        install
+	adduser                        install
+	apparmor                    install
+	apport                        install
+	apport-symptoms                    install
+	apt                        install
+	x
+	Ansible command
+	ansible all -i inventory -a "dpkg --get-selections" --limit "vm2"
+	
+	Ansible output:
+	vm2 | SUCCESS | rc=0 >>
+	accountsservice                    install
+	acl                        install
+	acpid                        install
+	adduser                        install
+	apparmor                    install
+	apport                        install
+	apport-symptoms                    install
+	apt                        install
+	
+	
+	User output:
+	list of packages: pkg 1, pkg 2
+	
+	
+* merge vm1 vm2 -a "vm3"
+	Bot creates new vm spec file/vagrant file or playbook. And spin it up.
+	Output of ansible command is analyzed and proper resonses are forwarded to user/slack.
+	
+	return uptime of new vm.
+	user response:
+	"20:20  up 10 days, 12:53, 2 users, load averages: 3.02 3.08 2.82"
+	
+	
+Use case 3 data:
+
+	user command:
+	list_shrinkable
+	
+	Internal:
+		get list of VMs available and its details. 
+		get AWS --> "http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/US_SingleMetricPerInstance.html"
+		
+	
+	user output:
+	List of shrinkable VMs:
+	vm3
+	
+	
+	user command:
+	shrinked_version vm3
+	
+	user output:
+	Proposed VM config:
+	list of packages: npm, python
+	config: t2.tiny, 4gb ram
+	
+
+	User command:
+	shrink vm3
+	
+	User output:
+	VM3 has been shrinked.
+	
+

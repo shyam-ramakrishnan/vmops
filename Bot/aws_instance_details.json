@@ -1,0 +1,803 @@
+{
+  "m1.small": {
+    "Memory": "1.7 GiB",
+    "Compute Units (ECU)": "1 units",
+    "vCPUs": "1 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "160 GiB HDD + 900MB swap",
+    "Arch": "32/64-bit",
+    "Network Performance": "Low"
+  },
+  "m1.medium": {
+    "Memory": "3.75 GiB",
+    "Compute Units (ECU)": "2 units",
+    "vCPUs": "1 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "410 GiB HDD",
+    "Arch": "32/64-bit",
+    "Network Performance": "Moderate"
+  },
+  "m1.large": {
+    "Memory": "7.5 GiB",
+    "Compute Units (ECU)": "4 units",
+    "vCPUs": "2 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "840 GiB (2 * 420 GiB HDD)",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "m1.xlarge": {
+    "Memory": "15.0 GiB",
+    "Compute Units (ECU)": "8 units",
+    "vCPUs": "4 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "1680 GiB (4 * 420 GiB HDD)",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "c1.medium": {
+    "Memory": "1.7 GiB",
+    "Compute Units (ECU)": "5 units",
+    "vCPUs": "2 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "350 GiB HDD + 900MB swap",
+    "Arch": "32/64-bit",
+    "Network Performance": "Moderate"
+  },
+  "c1.xlarge": {
+    "Memory": "7.0 GiB",
+    "Compute Units (ECU)": "20 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "1680 GiB (4 * 420 GiB HDD)",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "cc2.8xlarge": {
+    "Memory": "60.5 GiB",
+    "Compute Units (ECU)": "88 units",
+    "vCPUs": "32 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "3360 GiB (4 * 840 GiB HDD)",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "cg1.4xlarge": {
+    "Memory": "22.5 GiB",
+    "Compute Units (ECU)": "33.5 units",
+    "vCPUs": "16 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "1680 GiB (2 * 840 GiB HDD)",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "m2.xlarge": {
+    "Memory": "17.1 GiB",
+    "Compute Units (ECU)": "6.5 units",
+    "vCPUs": "2 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "420 GiB HDD",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "m2.2xlarge": {
+    "Memory": "34.2 GiB",
+    "Compute Units (ECU)": "13 units",
+    "vCPUs": "4 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "850 GiB HDD",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "m2.4xlarge": {
+    "Memory": "68.4 GiB",
+    "Compute Units (ECU)": "26 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "1680 GiB (2 * 840 GiB HDD)",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "hs1.8xlarge": {
+    "Memory": "117.0 GiB",
+    "Compute Units (ECU)": "35 units",
+    "vCPUs": "16 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "48000 GiB (24 * 2000 GiB HDD)",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "t1.micro": {
+    "Memory": "0.613 GiB",
+    "Compute Units (ECU)": "Burstable",
+    "vCPUs": "1 vCPUs",
+    "Clock Speed(GHz)": "up to 3.3",
+    "Instance Storage": "EBS only",
+    "Arch": "32/64-bit",
+    "Network Performance": "Very Low"
+  },
+  "t2.nano": {
+    "Memory": "0.5 GiB",
+    "Compute Units (ECU)": "Base performance: 5%",
+    "vCPUs": "1 vCPUs for a 1h 12m burst",
+    "Clock Speed(GHz)": "up to 3.3",
+    "Instance Storage": "EBS only",
+    "Arch": "32/64-bit",
+    "Network Performance": "Low"
+  },
+  "t2.micro": {
+    "Memory" : "1.0 GiB",
+    "Compute Units (ECU)":"Base performance: 10%",
+    "vCPUs": "1 vCPUs for a 2h 24m burst",
+    "Clock Speed(GHz)": "Up to 3.3",
+    "Instance Storage": "EBS only",
+    "Arch": "32/64-bit",
+    "Network Performance": "Low to Moderate"
+  },
+  "t2.small": {
+    "Memory": "2.0 GiB",
+    "Compute Units (ECU)": "Base performance: 20%",
+    "vCPUs": "1 vCPUs for a 4h 48m burst",
+    "Clock Speed(GHz)": "Up to 3.3",
+    "Instance Storage": "EBS only",
+    "Arch": "32/64-bit",
+    "Network Performance": "Low to Moderate"
+  },
+  "t2.medium": {
+    "Memory": "4.0 GiB",
+    "Compute Units (ECU)": "Base performance: 40%",
+    "vCPUs": "2 vCPUs for a 4h 48m burst",
+    "Clock Speed(GHz)": "Up to 3.3",
+    "Instance Storage": "EBS only",
+    "Arch": "32/64-bit",
+    "Network Performance": "Low to Moderate"
+  },
+  "t2.large": {
+    "Memory": "8.0 GiB",
+    "Compute Units (ECU)": "Base performance: 60%",
+    "vCPUs": "2 vCPUs for a 7h 12m burst",
+    "Clock Speed(GHz)": "Up to 3.0",
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Low to Moderate"
+  },
+  "t2.xlarge": {
+    "Memory": "16.0 GiB",
+    "Compute Units (ECU)": "Base performance: 90%",
+    "vCPUs": "4 vCPUs for a 5h 24m burst",
+    "Clock Speed(GHz)": "Up to 3.0",
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "t2.2xlarge": {
+    "Memory": "32.0 GiB",
+    "Compute Units (ECU)": "Base performance: 135%",
+    "vCPUs": "8 vCPUs for a 4h 3m burst",
+    "Clock Speed(GHz)": "Up to 3.0",
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "m4.large": {
+    "Memory": "8.0 GiB",
+    "Compute Units (ECU)": "6.5 units",
+    "vCPUs": "2 vCPUs",
+    "Clock Speed(GHz)": 2.4,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "m4.xlarge": {
+    "Memory": "16.0 GiB",
+    "Compute Units (ECU)": "13 units",
+    "vCPUs": "4 vCPUs",
+    "Clock Speed(GHz)": 2.4,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "m4.2xlarge": {
+    "Memory": "32.0 GiB",
+    "Compute Units (ECU)": "26 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": 2.4,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "m4.4xlarge": {
+    "Memory": "64.0 GiB",
+    "Compute Units (ECU)": "53.5 units",
+    "vCPUs": "16 vCPUs",
+    "Clock Speed(GHz)": 2.4,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "m4.10xlarge": {
+    "Memory": "160.0 GiB",
+    "Compute Units (ECU)": "124.5 units",
+    "vCPUs": "40 vCPUs",
+    "Clock Speed(GHz)": 2.4,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "m4.16xlarge": {
+    "Memory": "256.0 GiB",
+    "Compute Units (ECU)": "188 units",
+    "vCPUs": "64 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "25 Gigabit"
+  },
+  "c5.large": {
+    "Memory": "4.0 GiB",
+    "Compute Units (ECU)": "8 units",
+    "vCPUs": "2 vCPUs",
+    "Clock Speed(GHz)": 3,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gbps"
+  },
+  "c5.xlarge": {
+    "Memory": "8.0 GiB",
+    "Compute Units (ECU)": "16 units",
+    "vCPUs": "4 vCPUs",
+    "Clock Speed(GHz)": 3,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gbps"
+  },
+  "c5.2xlarge": {
+    "Memory": "16.0 GiB",
+    "Compute Units (ECU)": "31 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": 3,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gbps"
+  },
+  "c5.4xlarge": {
+    "Memory": "32.0 GiB",
+    "Compute Units (ECU)": "62 units",
+    "vCPUs": "16 vCPUs",
+    "Clock Speed(GHz)": 3,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gpbs"
+  },
+  "c5.9xlarge": {
+    "Memory": "72.0 GiB",
+    "Compute Units (ECU)": "139 units",
+    "vCPUs": "36 vCPUs",
+    "Clock Speed(GHz)": 3,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "c5.18xlarge": {
+    "Memory": "144.0 GiB",
+    "Compute Units (ECU)": "278 units",
+    "vCPUs": "72 vCPUs",
+    "Clock Speed(GHz)": 3,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "25 Gigabit"
+  },
+  "c4.large": {
+    "Memory": "3.75 GiB",
+    "Compute Units (ECU)": "8 units",
+    "vCPUs": "2 vCPUs",
+    "Clock Speed(GHz)": 2.9,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "c4.xlarge": {
+    "Memory": "7.5 GiB",
+    "Compute Units (ECU)": "16 units",
+    "vCPUs": "4 vCPUs",
+    "Clock Speed(GHz)": 2.9,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "c4.2xlarge": {
+    "Memory": "15.0 GiB",
+    "Compute Units (ECU)": "31 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": 2.9,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "c4.4xlarge": {
+    "Memory": "30.0 GiB",
+    "Compute Units (ECU)": "62 units",
+    "vCPUs": "16 vCPUs",
+    "Clock Speed(GHz)": 2.9,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "c4.8xlarge": {
+    "Memory": "60.0 GiB",
+    "Compute Units (ECU)": "132 units",
+    "vCPUs": "36 vCPUs",
+    "Clock Speed(GHz)": 2.9,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "r4.large": {
+    "Memory": "15.25 GiB",
+    "Compute Units (ECU)": "7 units",
+    "vCPUs": "2 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gigabit"
+  },
+  "r4.xlarge": {
+    "Memory": "30.5 GiB",
+    "Compute Units (ECU)": "13.5 units",
+    "vCPUs": "4 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gigabit"
+  },
+  "r4.2xlarge": {
+    "Memory": "61.0 GiB",
+    "Compute Units (ECU)": "27 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gigabit"
+  },
+  "r4.4xlarge": {
+    "Memory": "122.0 GiB",
+    "Compute Units (ECU)": "53 units",
+    "vCPUs": "16 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gigabit"
+  },
+  "r4.8xlarge": {
+    "Memory": "244.0 GiB",
+    "Compute Units (ECU)": "99 units",
+    "vCPUs": "32 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "r4.16xlarge": {
+    "Memory": "488.0 GiB",
+    "Compute Units (ECU)": "195 units",
+    "vCPUs": "64 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "25 Gigabit"
+  },
+  "p3.2xlarge": {
+    "Memory": "61.0 GiB",
+    "Compute Units (ECU)": "23.5 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": "2.3 (base) 2.7 (turbo)",
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gigabit"
+  },
+  "p3.8xlarge": {
+    "Memory": "244.0 GiB",
+    "Compute Units (ECU)": "94 units",
+    "vCPUs": "32 vCPUs",
+    "Clock Speed(GHz)": "2.3 (base) 2.7 (turbo)",
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "p3.16xlarge": {
+    "Memory": "488.0 GiB",
+    "Compute Units (ECU)": "188 units",
+    "vCPUs": "64 vCPUs",
+    "Clock Speed(GHz)": "2.3 (base) 2.7 (turbo)",
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "25 Gigabit"
+  },
+  "p2.xlarge": {
+    "Memory": "61.0 GiB",
+    "Compute Units (ECU)": "12 units",
+    "vCPUs": "4 vCPUs",
+    "Clock Speed(GHz)": "2.3 (base) 2.7 (turbo)",
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "p2.8xlarge": {
+    "Memory": "488.0 GiB",
+    "Compute Units (ECU)": "94 units",
+    "vCPUs": "32 vCPUs",
+    "Clock Speed(GHz)": "2.3 (base) 2.7 (turbo)",
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "p2.16xlarge": {
+    "Memory": "732.0 GiB",
+    "Compute Units (ECU)": "188 units",
+    "vCPUs": "64 vCPUs",
+    "Clock Speed(GHz)": "2.3 (base) 2.7 (turbo)",
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "25 Gigabit"
+  },
+  "g3.4xlarge": {
+    "Memory": "122.0 GiB",
+    "Compute Units (ECU)": "47 units",
+    "vCPUs": "16 vCPUs",
+    "Clock Speed(GHz)": "2.3 (base) 2.7 (turbo)",
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gigabit"
+  },
+  "g3.8xlarge": {
+    "Memory": "244.0 GiB",
+    "Compute Units (ECU)": "94 units",
+    "vCPUs": "32 vCPUs",
+    "Clock Speed(GHz)": "2.3 (base) 2.7 (turbo)",
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "g3.16xlarge": {
+    "Memory": "488.0 GiB",
+    "Compute Units (ECU)": "188 units",
+    "vCPUs": "64 vCPUs",
+    "Clock Speed(GHz)": "2.3 (base) 2.7 (turbo)",
+    "Instance Storage": "EBS only",
+    "Arch": "64-bit",
+    "Network Performance": "25 Gigabit"
+  },
+  "d2.xlarge": {
+    "Memory": "30.5 GiB",
+    "Compute Units (ECU)": "14 units",
+    "vCPUs": "4 vCPUs",
+    "Clock Speed(GHz)": 2.4,
+    "Instance Storage": "6000 GiB (3 * 2000 GiB HDD)",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "d2.2xlarge": {
+    "Memory": "61.0 GiB",
+    "Compute Units (ECU)": "28 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": 2.4,
+    "Instance Storage": "12000 GiB (6 * 2000 GiB HDD)",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "d2.4xlarge": {
+    "Memory": "122.0 GiB",
+    "Compute Units (ECU)": "56 units",
+    "vCPUs": "16 vCPUs",
+    "Clock Speed(GHz)": 2.4,
+    "Instance Storage": "24000 GiB (12 * 2000 GiB HDD)",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "d2.8xlarge": {
+    "Memory": "244.0 GiB",
+    "Compute Units (ECU)": "116 units",
+    "vCPUs": "36 vCPUs",
+    "Clock Speed(GHz)": 2.4,
+    "Instance Storage": "48000 GiB (24 * 2000 GiB HDD)",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "g2.2xlarge": {
+    "Memory": "15.0 GiB",
+    "Compute Units (ECU)": "26 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "60 GiB SSD",
+    "Arch": "64-bit",
+    "Network Performance": ""
+  },
+  "g2.8xlarge": {
+    "Memory": "60.0 GiB",
+    "Compute Units (ECU)": "104 units",
+    "vCPUs": "32 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "240 GiB (2 * 120 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": ""
+  },
+  "cr1.8xlarge": {
+    "Memory": "244.0 GiB",
+    "Compute Units (ECU)": "88 units",
+    "vCPUs": "32 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "240 GiB (2 * 120 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "hi1.4xlarge": {
+    "Memory": "60.5 GiB",
+    "Compute Units (ECU)": "35 units",
+    "vCPUs": "16 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "2048 GiB (2 * 1024 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "m3.medium": {
+    "Memory": "3.75 GiB",
+    "Compute Units (ECU)": "3 units",
+    "vCPUs": "1 vCPUs",
+    "Clock Speed(GHz)": 2.5,
+    "Instance Storage": "4 GiB SSD",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "m3.large": {
+    "Memory": "7.5 GiB",
+    "Compute Units (ECU)": "6.5 units",
+    "vCPUs": "2 vCPUs",
+    "Clock Speed(GHz)": 2.5,
+    "Instance Storage": "32 GiB SSD",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "m3.xlarge": {
+    "Memory": "15.0 GiB",
+    "Compute Units (ECU)": "13 units",
+    "vCPUs": "4 vCPUs",
+    "Clock Speed(GHz)": 2.5,
+    "Instance Storage": "80 GiB (2 * 40 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "m3.2xlarge": {
+    "Memory": "30.0 GiB",
+    "Compute Units (ECU)": "26 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": 2.5,
+    "Instance Storage": "160 GiB (2 * 80 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "c3.large": {
+    "Memory": "3.75 GiB",
+    "Compute Units (ECU)": "7 units",
+    "vCPUs": "2 vCPUs",
+    "Clock Speed(GHz)": 2.8,
+    "Instance Storage": "32 GiB  (2 * 16 GiB SSD)",
+    "Arch": "32/64-bit",
+    "Network Performance": "Moderate"
+  },
+  "c3.xlarge": {
+    "Memory": "7.5 GiB",
+    "Compute Units (ECU)": "14 units",
+    "vCPUs": "4 vCPUs",
+    "Clock Speed(GHz)": 2.8,
+    "Instance Storage": "80 GiB (2 * 40 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "c3.2xlarge": {
+    "Memory": "15.0 GiB",
+    "Compute Units (ECU)": "28 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": 2.8,
+    "Instance Storage": "160 GiB (2 * 80 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "c3.4xlarge": {
+    "Memory": "30.0 GiB",
+    "Compute Units (ECU)": "55 units",
+    "vCPUs": "16 vCPUs",
+    "Clock Speed(GHz)": 2.8,
+    "Instance Storage": "320 GiB (2 * 160 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "c3.8xlarge": {
+    "Memory": "60.0 GiB",
+    "Compute Units (ECU)": "108 units",
+    "vCPUs": "32 vCPUs",
+    "Clock Speed(GHz)": 2.8,
+    "Instance Storage": "640 GiB (2 * 320 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "x1.16xlarge": {
+    "Memory": "976.0 GiB",
+    "Compute Units (ECU)": "174.5 units",
+    "vCPUs": "64 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "1920 GiB SSD",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "x1.32xlarge": {
+    "Memory": "1952.0 GiB",
+    "Compute Units (ECU)": "349 units",
+    "vCPUs": "128 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "3840 GiB  (2 * 1920 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "25 Gigabit"
+  },
+  "x1e.32xlarge": {
+    "Memory": "3904.0 GiB",
+    "Compute Units (ECU)": "340 units",
+    "vCPUs": "128 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "3840 GiB (2 * 1920 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "25 Gigabit"
+  },
+  "i2.xlarge": {
+    "Memory": "30.5 GiB",
+    "Compute Units (ECU)": "14 units",
+    "vCPUs": "4 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "800 GiB  SSD",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "i2.2xlarge": {
+    "Memory": "61.0 GiB",
+    "Compute Units (ECU)": "27 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "1600 GiB (2 * 800 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "i2.4xlarge": {
+    "Memory": "122.0 GiB",
+    "Compute Units (ECU)": "53 units",
+    "vCPUs": "16 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "3200 GiB  (4 * 800 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "i2.8xlarge": {
+    "Memory": "244.0 GiB",
+    "Compute Units (ECU)": "104 units",
+    "vCPUs": "32 vCPUs",
+    "Clock Speed(GHz)": "",
+    "Instance Storage": "6400 GiB (8 * 800 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "r3.large": {
+    "Memory": "15.25 GiB",
+    "Compute Units (ECU)": "6.5 units",
+    "vCPUs": "2 vCPUs",
+    "Clock Speed(GHz)": 2.5,
+    "Instance Storage": "32 GiB  SSD",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "r3.xlarge": {
+    "Memory": "30.5 GiB",
+    "Compute Units (ECU)": "13 units",
+    "vCPUs": "4 vCPUs",
+    "Clock Speed(GHz)": 2.5,
+    "Instance Storage": "80 GiB  SSD",
+    "Arch": "64-bit",
+    "Network Performance": "Moderate"
+  },
+  "r3.2xlarge": {
+    "Memory": "61.0 GiB",
+    "Compute Units (ECU)": "26 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": 2.5,
+    "Instance Storage": "160 GiB  SSD",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "r3.4xlarge": {
+    "Memory": "122.0 GiB",
+    "Compute Units (ECU)": "52 units",
+    "vCPUs": "16 vCPUs",
+    "Clock Speed(GHz)": 2.5,
+    "Instance Storage": "320 GiB  SSD",
+    "Arch": "64-bit",
+    "Network Performance": "High"
+  },
+  "r3.8xlarge": {
+    "Memory": "244.0 GiB",
+    "Compute Units (ECU)": "104 units",
+    "vCPUs": "32 vCPUs",
+    "Clock Speed(GHz)": 2.5,
+    "Instance Storage": "640 GiB  (2 * 320 GiB SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "f1.2xlarge": {
+    "Memory": "122.0 GiB",
+    "Compute Units (ECU)": "26 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": "2.3 (base) 2.7 (turbo)",
+    "Instance Storage": "470 GiB  NVMe SSD",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gigabit"
+  },
+  "f1.16xlarge": {
+    "Memory": "976.0 GiB",
+    "Compute Units (ECU)": "188 units",
+    "vCPUs": "64 vCPUs",
+    "Clock Speed(GHz)": "2.3 (base) 2.7 (turbo)",
+    "Instance Storage": "3760 GiB  (4 * 940 GiB NVMe SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "25 Gigabit"
+  },
+  "i3.large": {
+    "Memory": "15.25 GiB",
+    "Compute Units (ECU)": "7 units",
+    "vCPUs": "2 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "475 GiB  NVMe SSD",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gigabit"
+  },
+  "i3.xlarge": {
+    "Memory": "30.5 GiB",
+    "Compute Units (ECU)": "13 units",
+    "vCPUs": "4 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "950 GiB  NVMe SSD",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gigabit"
+  },
+  "i3.2xlarge": {
+    "Memory": "61.0 GiB",
+    "Compute Units (ECU)": "27 units",
+    "vCPUs": "8 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "1900 GiB  NVMe SSD",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gigabit"
+  },
+  "i3.4xlarge": {
+    "Memory": "122.0 GiB",
+    "Compute Units (ECU)": "53 units",
+    "vCPUs": "16 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "3800 GiB  (2 * 1900 GiB NVMe SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "Up to 10 Gigabit"
+  },
+  "i3.8xlarge": {
+    "Memory": "244.0 GiB",
+    "Compute Units (ECU)": "99 units",
+    "vCPUs": "32 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "7600 GiB  (4 * 1900 GiB NVMe SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "10 Gigabit"
+  },
+  "i3.16xlarge": {
+    "Memory": "488.0 GiB",
+    "Compute Units (ECU)": "200 units",
+    "vCPUs": "64 vCPUs",
+    "Clock Speed(GHz)": 2.3,
+    "Instance Storage": "15200 GiB  (8 * 1900 GiB NVMe SSD)",
+    "Arch": "64-bit",
+    "Network Performance": "25 Gigabit"
+  }
+}

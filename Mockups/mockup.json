@@ -1,0 +1,78 @@
+{
+  "usecase": [
+    {
+      "command": "uptime",
+      "result": {
+        "output": "20:20 up 10 days, 12:53, 2 users, load averages: 3.02 3.08 2.82",
+        "code": 1
+      }
+    },
+    {
+      "command": "ansible group_name -i inventory --list-hosts",
+      "result": {
+        "output": "hosts (2):\n vm1\n vm2",
+        "code": 1
+      }
+    },
+    {
+      "command": "merged_version vm1 vm2",
+      "result": {
+        "output": "list of packages: \n",
+        "code": 1
+      },
+      "internalCommands": [
+        {
+          "command": "ansible all -i inventory -a \"dpkg --get-selections\" --limit \"vm1\"",
+          "result": {
+            "output": "VM1: \npip\npython\nnpm\n",
+            "code": 1
+          }
+        },
+        {
+          "command": "ansible all -i inventory -a \"dpkg --get-selections\" --limit \"vm2\"",
+          "result": {
+            "output": "VM2: \naccountsservice\napport\nboto\n",
+            "code": 1
+          }
+        }
+      ]
+    },
+    {
+      "command": "merge vm1 vm2 -a vm3",
+      "result": {
+        "output": "20:20 up 10 days, 12:53, 2 users, load averages: 3.02 3.08 2.82",
+        "code": 1
+      },
+      "internalCommands": [
+        {
+          "command": "uptime",
+          "result": {
+            "output": "20:20 up 10 days, 12:53, 2 users, load averages: 3.02 3.08 2.82",
+            "code": 1
+          }
+        }
+      ]
+    },
+    {
+      "command": "list_shrinkable",
+      "result": {
+        "output": "List of shrinkable VMs:\n\t\"vm3\"",
+        "code": 1
+      }
+    },
+    {
+      "command": "shrinked_version vm3",
+      "result": {
+        "output": "Proposed VM config:\n\tlist of packages: npm, python\n\tconfig: t2.tiny, 4gb ram",
+        "code": 1
+      }
+    },
+    {
+      "command": "shrink vm3",
+      "result": {
+        "output": "VM3 has been shrinked.",
+        "code": 1
+      }
+    }
+  ]
+}

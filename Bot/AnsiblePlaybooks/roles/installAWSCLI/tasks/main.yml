@@ -1,0 +1,4 @@
+- name: Install Boto packages
+  pip: name=boto state=latest
+- name: Install AWS CLI
+  pip: name=awscli state=latest

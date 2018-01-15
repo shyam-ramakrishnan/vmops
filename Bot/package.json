@@ -1,0 +1,29 @@
+{
+  "name": "slackbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "mocha --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "botkit": "^0.6.1",
+    "chai": "^4.1.2",
+    "collections": "^5.0.7",
+    "fs": "0.0.1-security",
+    "js-yaml": "^3.10.0",
+    "mocha": "^4.0.0",
+    "mock-require": "^2.0.2",
+    "node-cmd": "^3.0.0",
+    "os": "^0.1.1",
+    "sinon": "^4.0.2",
+    "slackbots": "^1.1.0",
+    "sleep": "^5.1.1",
+    "forever": "0.15.3"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.0"
+  }
+}

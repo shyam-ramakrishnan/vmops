@@ -1,0 +1,79 @@
+---
+  # Talk to all hosts just so we can learn about them...
+- name: Create a EC2 instance
+  hosts: localhost
+  gather_facts: False
+  vars:
+    keypair: vm_key
+    instance_type: t2.micro
+    image: ami-336b4456
+    region: us-east-2
+  tasks:
+    - name: adding to sudoers
+      lineinfile:
+        path: /etc/sudoers.d/ameya
+        line: 'ameya ALL=(ALL) NOPASSWD: ALL'
+        create: yes
+        state: present
+    - name: Launch instance
+      ec2:
+         key_name: "{{ keypair }}"
+         #group: BotGroup
+         instance_type: "{{ instance_type }}"
+         image: "{{ image }}"
+         wait: true
+         region: "{{ region }}"
+         exact_count: 1
+         count_tag:
+            Name: vm1
+         instance_tags:
+            Name: vm1
+      register: ec2
+    - name: Print all ec2 variables
+      debug: var=ec2
+
+    - add_host: 
+        name: "{{ item.public_ip }}"
+        groups: "vm1"
+        ansible_user: ubuntu
+        ansible_ssh_private_key_file: /Users/ameyaprabhu/.ssh/id_rsa
+      with_items: "{{ ec2.instances }}"
+      
+    - name: Wait for the instances to boot by checking the ssh port
+      wait_for: 
+        host: "{{item.public_ip}}" 
+        port: 22 
+        delay: 60 
+        state: started
+      with_items: "{{ ec2.instances }}"
+
+- hosts: vm1
+  gather_facts: no
+  become: yes
+  pre_tasks:
+    - name: Install Python
+      raw: sudo test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+    - setup:
+  tasks:
+    - name: install pip
+      apt: pkg=python-pip state=latest
+    - name: Install Boto packages
+      pip: name=boto state=latest
+    - name: Install AWS CLI
+      pip: name=awscli state=latest
+    - name: Install Git 
+      apt: name=git update_cache=yes state=latest
+    - name: Install npm
+      apt: name=npm update_cache=yes state=latest
+    - name: Install node.js 
+      apt: name=nodejs-legacy update_cache=yes state=latest
+    - name: Clone Repository 
+      git: repo=https://github.com/maheshmasale/VMOps.git dest=/home/repo 
+    - name: Install npm packages
+      npm: path=/home/repo/VMOps/Bot
+    - name: Install Forever
+      npm: name=forever global=yes
+    - name: Install Ansible
+      apt: pkg=ansible state=latest
+
+...

@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  vars:
+    keypair: vmops_mmm
+    instance_type: t2.micro
+    image: ami-da05a4a0
+    region: us-east-1
+  tasks:
+    - name: install ec2 facts
+      ec2_instance_facts:
+        region: us-east-1
+      register: ec2
+    - command: aws cloudwatch get-metric-statistics --metric-name CPUUtilization --namespace AWS/EC2 --statistics "Average" --start-time "{{item.launch_time}}" --end-time "{{ansible_date_time.iso8601}}"  --period 3000 --dimensions Name=InstanceId,Value="{{item.instance_id}}"
+      register: intance_out
+      with_items: "{{ ec2.instances }}"
+    - name: Print all ec2 variables abcdefghijklmnopqrstuvwxyz
+      debug: var=dict(intance_out.items()+ec2.items())
+...
