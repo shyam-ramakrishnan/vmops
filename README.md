@@ -5,9 +5,9 @@ VMOps is a reactor bot implemented in Slack to automate VM operations in AWS ser
 **Problems solved by the Bot:**
 
 1) Deploying Configurations of Virtual Machine instances in AWS servers which otherwise would have to be done manually. This saves time and effort of DevOps engineers.  
-2) A centralized UI(Slack) to interact with all the Virtual Machines. The engineers won't have to SSH into the individual VM instance and thus reduces complexity.  
-3) Ability to shrink under-utilized Virtual Machines. This incorporates efficient utilization of the resources in our remote server.  
-4) Ability to merge two virtual machines on package level to spawn a new Virtual Machine. So that engineers do not have to spend time installing all packages if there's a need to combine virtual machine instances.
+2) A centralized UI(Slack) to interact with VMs in different AWS servers and availability regions. The engineers won't have to SSH into the individual VM instance and thus reduces complexity.  
+3) Ability to shrink under-utilized VMs. This incorporates efficient utilization of the resources in our remote server.  
+4) Ability to merge two VMs on package level to spawn a new VM. So that engineers do not have to spend time installing all packages if there's a need to combine VM instances.
 
 **Bot Architecture:**
 
