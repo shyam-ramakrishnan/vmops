@@ -1,4 +1,4 @@
-## VMOps
+## Overview
 
 VMOps is a reactor bot implemented in Slack to automate VM operations in AWS servers using Ansible. Primary users would be DevOps engineers who are familiar with configuration management and scaling AWS EC2 instances.
 
