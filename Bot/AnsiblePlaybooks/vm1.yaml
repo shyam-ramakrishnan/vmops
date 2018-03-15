@@ -1,5 +1,6 @@
 ---
-  # Talk to all hosts just so we can learn about them...
+# Ansible Playbook to create EC2 hosts on AWS server
+
 - name: Create a EC2 instance
   hosts: localhost
   gather_facts: False

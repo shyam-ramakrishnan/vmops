@@ -11,7 +11,7 @@ access_secret = os.environ['AWS_SECRET_ACCESS_KEY']
 region_name = "us-east-1"
 region_endpoint = "apigateway.us-east-1.amazonaws.com"
 
-# first create a region object and connection
+# initially, create a region object and connection
 region = RegionInfo(name=region_name, endpoint=region_endpoint)
 ec2conn =  boto.connect_ec2(access_id, access_secret, port=port, region=region)
 
